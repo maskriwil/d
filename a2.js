@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer');
     const browser = await puppeteer.launch({executablePath:"/usr/lib/chromium-browser/chromium-browser", args:['--no-sandbox']});
     const page = await browser.newPage();
     await page.setUserAgent(userAgent.toString())
-    await page.goto('https://codehs.com/sandbox/id/python-3-m6GXXr')
+    await page.goto('https://codehs.com/sandbox/id/python-3-igm5qO')
     await page.waitForTimeout(2000)
     await page.mouse.click(580,125,{'button': 'left'})
     await page.waitForTimeout(15000)
