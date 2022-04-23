@@ -2,10 +2,7 @@ const userAgent = require('user-agents');
 const puppeteer = require('puppeteer');
 (async () => {
     for(i=0;i<3000;i++){
-    const browser = await puppeteer.launch({
-        headless: true,
-        args: ['--no-sandbox']
-    });
+    const browser = await puppeteer.launch({executablePath:"/usr/lib/chromium-browser/chromium-browser", args:['--no-sandbox']});
     const page = await browser.newPage();
     await page.setUserAgent(userAgent.toString())
     await page.goto('https://codehs.com/sandbox/id/python-3-XMQ8OX')
