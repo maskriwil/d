@@ -8,14 +8,8 @@ const puppeteer = require('puppeteer');
     await page.goto('https://codehs.com/sandbox/id/python-3-Qo0kCC')
     await page.waitForTimeout(2000)
     await page.mouse.click(580,125,{'button': 'left'})
-    await page.waitForTimeout(15000)
-    await page.mouse.click(625,125,{'button': 'left'})
-    await page.waitForTimeout(500)
-    await page.screenshot({'path': 'stop.png'})
-    await page.waitForTimeout(1500)
-    await page.mouse.click(580,125,{'button': 'left'})
     await page.waitForTimeout(1000)
-    for(y=0;y<50;y++) {
+    for(y=0;y<45;y++) {
         await page.mouse.click(580,400,{'button': 'left'})
         await page.keyboard.press('KeyH')
         await page.waitForTimeout(5000)
@@ -23,7 +17,7 @@ const puppeteer = require('puppeteer');
         await page.waitForTimeout(5000)
         await page.keyboard.press('KeyH')
         await page.waitForTimeout(5000)
-        console.log(`pimpo${i}${y}`)
+        console.log(`a${i}${y}`)
     }
     await page.waitForTimeout(1000)
     await page.mouse.click(630,125,{'button': 'left'})
