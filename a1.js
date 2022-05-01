@@ -7,7 +7,7 @@ const puppeteer = require('puppeteer');
     const page = await browser.newPage();
     await page.setUserAgent(userAgent.toString())
     await page.goto('https://codehs.com/sandbox/id/python-3-GnT0Im')
-    await page.waitForTimeout(2000)
+    await page.waitForTimeout(10000)
     await page.mouse.click(580,125,{'button': 'left'})
     await page.waitForTimeout(1000)
     for(y=0;y<450;y++) {
