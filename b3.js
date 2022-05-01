@@ -6,15 +6,10 @@ const puppeteer = require('puppeteer');
     const page = await browser.newPage();
     await page.setUserAgent(userAgent.toString())
     await page.goto('https://codehs.com/sandbox/id/python-3-FJ9Q5s')
-    await page.waitForTimeout(2000)
-    await page.mouse.click(580,125,{'button': 'left'})
-    await page.waitForTimeout(15000)
-    await page.mouse.click(625,125,{'button': 'left'})
-    await page.waitForTimeout(500)
-    await page.screenshot({'path': 'stop.png'})
-    await page.waitForTimeout(1500)
+    await page.waitForTimeout(20000)
     await page.mouse.click(580,125,{'button': 'left'})
     await page.waitForTimeout(1000)
+    await page.mouse.click(580,400,{'button': 'left'})
     for(y=0;y<50;y++) {
         await page.mouse.click(580,400,{'button': 'left'})
         await page.keyboard.press('KeyH')
