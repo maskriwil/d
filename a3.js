@@ -17,6 +17,7 @@ const puppeteer = require('puppeteer');
         await page.waitForTimeout(5000)
         await page.keyboard.press('KeyH')
         await page.waitForTimeout(5000)
+        await page.mouse.click(580,125,{'button': 'left'})
         console.log(`a${i}${y}`)
     }
     await page.waitForTimeout(1000)
